@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fefaf6;
+    color: #333;
+    line-height: 1.7;
+  }
+header {
+    background: #e76a0b;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+header .logo {
+    display: flex;
+    gap:12px;
+  }
+header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+ a{
+    text-decoration: none;
+    justify-content: space-between;
+    gap:10px;
+    margin-left: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: large;
+
+
+ }
+
+.cta{
+    background: #e76a0b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width:250px;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 40px auto;
+    align-items: center;
+    margin-left: 480px;
+    text-decoration: none;
+    margin-top: 100px;
+ }
+  
+.email {
+    color: black;
+    font-size:large;
+    text-decoration: none;
+  }
+  
+.email:hover {
+    text-decoration: underline;
+  }
+  
+.hero {
+    background: url('images/WhatsApp\ Image\ 2025-05-09\ at\ 15.24.25_6544d279.jpg')no-repeat center center/cover;
+    height: 85vh;
+    background-position: 100%;
+
+  }
+  .motto{
+    margin-top: 200px;
+    color: orangered;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 800;
+  }
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #5a4031;
+    position: relative;
+    text-align: center;
+  }
+  section h2::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #d8a15c;
+    margin: 15px auto;
+  }
+  
+#about p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #555;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+#services {
+    background: #fff;
+  }
+  
+#services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+ #services li {
+    background: #f9f3ef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  #services li:hover {
+    transform: translateY(-8px);
+  }
+  
+#testimonials {
+    background: #fefaf6;
+  }
+  
+.testimonial {
+    background: #fff;
+    border: 1px solid #d8a15c;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  .testimonial h4 {
+    margin-top: 15px;
+    color: #8b5e3c;
+    font-weight: bold;
+  }
+  
+#purchase {
+    background: #f9f3ef;
+  }
+  
+.product {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 500px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.07);
+  }
+  
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: 0.4s ease;
+  }
+  
+.product img:hover {
+    transform: scale(1.02);
+  }
+  
+.product form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+.product input, .product button {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+.product button {
+    background: #e76a0b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+.product button:hover {
+    background: #8b5e3c;
+  }
+  
+footer {
+    background: #5a4031;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+.social-icons a {
+    color: #d8a15c;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+.social-icons a:hover {
+    color: #ffffff;
+  }
+
+ @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      text-align: center;
+    }
+  
+    #services ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
